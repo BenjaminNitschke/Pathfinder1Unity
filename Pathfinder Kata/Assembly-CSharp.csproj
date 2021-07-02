@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Pathfinder.cs" />
+    <Compile Include="Assets\PathFinderCanYouReachTheExit.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

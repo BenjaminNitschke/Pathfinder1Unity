@@ -8,11 +8,10 @@ namespace PathfinderKata.Tests
 		[Test]
 		public void CheckStartTargetAndPathLength()
 		{
-			// ReSharper disable once Unity.IncorrectMonoBehaviourInstantiation
-			var path = new Pathfinder().GetPath(Pathfinder.Map);
-			Assert.That(path![0], Is.EqualTo(new Vector2(9, 8)));
-			Assert.That(path[^1], Is.EqualTo(new Vector2(3, 6)));
-			Assert.That(path, Has.Count!.EqualTo(19));
+			var path = PathFinderCanYouReachTheExit.PathFinder(Pathfinder.Map);
+			Assert.That(path![0], Is.EqualTo((8, 1)));
+			Assert.That(path[^1], Is.EqualTo((2, 3)));
+			Assert.That(path, Has.Count!.GreaterThanOrEqualTo(13));
 		}
 	}
 }
